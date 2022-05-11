@@ -1,38 +1,114 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction:column;
+  font-family: 'Poly', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel {
+  display:flex;
+  flex-wrap:nowrap;
+  height:100%;
+  flex-grow:1;
+  height:calc(100vh - 91px - 100px);
+  overflow-y:hidden;
+  overflow-x:scroll;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.carousel::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+.header {
+  font-size:4.5vw;
+}
+
+.paragraph {
+  font-size:2vw;
+}
+
+.page-grid-left {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+#portfolioImage {
+  height:4.5vw;
+}
+
+.text-align-left {
+  text-align:left;
+}
+
+.margin-top {
+  margin-top:1rem;
+}
+
+/* @media screen and (max-width: 1300px) {
+  .header {
+    font-size:8;
+  }
+  .paragraph {
+    font-size:1.5rem;
+  }
+} */
+
+@media screen and (max-width: 1150px) {
+  /* .header {
+    font-size:8vw;
+  } */
+  .paragraph {
+    font-size:3vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    font-size:5vw;
+  }
+  .paragraph {
+    font-size:4vw;
+  }
+}
+@media screen and (max-width: 600px) {
+        /* .header {
+          font-size: 6vw;
+        }
+    
+        .paragraph {
+          font-size: 5vw;
+        } */
+
+  /* #portfolioImage {
+    height: 6vw;
+  } */
+}
+@media screen and (max-width: 500px) {
+  .page-grid-left {
+    grid-template-columns:1fr;
+  }
+  .header {
+    font-size: 7vw;
+  }
+    #portfolioImage {
+      height: 8vw;
+    }
+  .paragraph, button {
+    font-size: 6vw;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.noshrink-w100 {
+  flex-shrink:0;
+  width:100%;
 }
 
-.App-link {
-  color: #61dafb;
+span, li, h1 {
+  transition: font 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-svg {
+  d: path("M8,2 L2,8");
 }

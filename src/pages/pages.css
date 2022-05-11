@@ -1,0 +1,310 @@
+#aboutpage {
+    display:grid;
+    z-index: 1;
+    width:100%;
+    flex-shrink:0;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    background-image: url('../assets/aboutBlue.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+}
+
+#coursespage {
+    display: grid;
+    width: 100%;
+    flex-shrink: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    background-image: url(../assets/coursesYellow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+#itcpage {
+    display: grid;
+    width: 100%;
+    flex-shrink: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    background-image: url(../assets/ITCYellow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+#jamapage {
+    display: grid;
+    width: 100%;
+    flex-shrink: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    background-image: url(../assets/jamaPink.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+#portfoliopage {
+    display: flex;
+    padding:2rem;
+    width: 100%;
+    flex-shrink: 0;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr; */
+    flex-direction: column;
+    overflow-y:scroll;
+}
+#skillspage {
+    display: flex;
+    padding:2rem;
+    width: 100%;
+    flex-shrink: 0;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr; */
+    flex-direction: column;
+    overflow-y:scroll;
+    position: relative;
+    justify-content:center;
+    background-image: url(../assets/skillsPurple.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+#cvpage {
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    flex-shrink: 0;
+    justify-content:center;
+    align-items:center;
+    background-image: url(../assets/cvColorRight.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+#portfoliopage::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+
+/* .room-image-container, .text-container {
+    flex-basis:50%;
+} */
+
+.room-image-container {
+    display:flex;
+    /* background-image:url(../assets/about.svg);
+    background-repeat:no-repeat;
+    background-position:center; */
+}
+
+.room-image-container > img {
+    width:100%;
+    padding: 1rem;
+}
+.course-image-container > img {
+    width:100%;
+
+}
+.itc-image-container > img {
+    width:100%;
+    padding: 1rem;
+}
+
+.course-image-container {
+    display:flex;
+    /* background-image:url(../assets/about.svg);
+    background-repeat:no-repeat;
+    background-position:center; */
+}
+
+.course-info-header {
+    font-size: 3vw;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top:2rem;
+}
+.course-info-paragraph {
+    font-size: 2vw;
+    text-align:left;
+    padding-right: 1rem;
+}
+
+.room-image-big-screen {
+    height:calc(100vh - 91px - 100px);
+}
+
+.button-group {
+    display:flex;
+    padding-bottom:1rem;
+}
+
+.m-left {
+    margin-left:1rem;
+}
+
+.m-top-bottom {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.text-container {
+    padding-left:2rem;
+}
+
+ul {
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    flex-grow:1;
+}
+
+.spread-text-grid {
+    grid-column:1/3;
+}
+
+h1 {
+    margin:0;
+}
+
+.portfolio-header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items:center;
+    padding-left: 1rem;
+}
+
+.skills-header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items:center;
+    padding-left: 1rem;
+    margin-bottom:auto;
+}
+
+.portfolio-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-project {
+    display: flex;
+    flex-direction: column;
+    width:33%;
+    padding:1rem;
+}
+
+.portfolio-image {
+    width: 100%;
+}
+
+.portfolio-header {
+    font-size: 5.5vw;
+}
+.project-name {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.project-info {
+font-size: 2vw;
+}
+
+.skills-container, .skills-row-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container {
+    position: absolute;
+    padding:3rem;
+}
+
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.row-name {
+    font-size: 2.5vw;
+    text-align:left;
+}
+.skill-name {
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+.skill-name {
+        font-size: 2vw;
+}
+}
+@media screen and (max-width: 800px) {
+    /* .header {
+          font-size: 6vw;
+        }
+    
+        .paragraph {
+          font-size: 5vw;
+        } */
+                .row-name {
+                    font-size: 4vw;
+                }
+        .project-name {
+            font-size: 5vw;
+        }
+        .portfolio-header {
+            font-size: 7vw;
+        }
+
+        #portfolioImage {
+            height: 8vw;
+        }
+
+        .project-info {
+            font-size: 5vw;
+        }
+        .portfolio-project {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+.skill-name {
+        font-size: 3vw;
+    }
+
+        .row-name {
+            font-size: 5vw;
+            padding:1rem;
+        }
+}
+@media screen and (max-width: 750px) { 
+.skills-container {
+    padding: 0;
+}
+
+#skillspage {
+    justify-content: flex-start;
+}
+.row-name {
+    font-size: 4vw;
+}
+}
