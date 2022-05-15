@@ -8,7 +8,7 @@ console.log('page',page);
     e.preventDefault();
     const itcpage = document.getElementById("itcpage")
     const scrollLeft = itcpage.scrollWidth
-    const carousel = document.getElementsByClassName("carousel")[0]
+    const carousel = document.getElementsByClassName("carouselDiv")[0]
     console.log(page);
     carousel.scrollTo({
       left: page >= 7 ? (scrollLeft * -7) : scrollLeft*page,
@@ -20,7 +20,6 @@ console.log('page',page);
     <a id="lowerNav" onClick={(e) => 
       {
         clickHandler(e)
-        page >= 7 ? setPage(1) : setPage(page+1)
       }
       }>
         <NextButton page={page}/>

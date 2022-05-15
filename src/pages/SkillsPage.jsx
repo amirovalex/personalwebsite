@@ -44,7 +44,6 @@ const SkillsPage = () => {
               <Skill src={mysql} text="MySQL"/>
               
               <Skill src={docker} text="Docker"/>
-              <Skill src={k8s} text="Kubernetes"/>
             </div>
           </div>
           <div className="skills-row-container">

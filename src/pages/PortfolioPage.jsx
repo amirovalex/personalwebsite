@@ -20,6 +20,7 @@ const PortfolioPage = () => {
               alt="smartBrain" 
               header1="Smart Brain"
               header2="Face Recognition App"
+              href="https://amirovalex.github.io/petadoption/"
               info="Tech used:
                 ReactJs,NodeJs,PostgreSQL"/>
             <Project 
@@ -27,6 +28,7 @@ const PortfolioPage = () => {
               alt="reactStore" 
               header1="React store"
               header2="E-commeerce platform"
+              href="https://amirovalex.github.io/reactstore/"
               info="Tech used: 
                 ReactJs,Firebase,StripeAPI"/>
             <Project 
@@ -34,8 +36,9 @@ const PortfolioPage = () => {
               alt="petAPet" 
               header1="Pet a pet"
               header2="Pet Adoption Platform"
-              info="Tech used: 
-                ReactJs, NodeJs, MySQL"/>
+              href="https://amirovalex.github.io/smart-brain100/"
+              info={`Tech used:\n
+                ReactJs,NodeJs,MySQL`}/>
           </div>
     </div>
   )

@@ -7,11 +7,9 @@ import {useWindow} from '../hooks/useWindow';
 const AboutPage = ({handlePageHeight,handlePageWidth}) => {
   const list =[
     "Developed learning techniques.",
-    "Became a mentor.",
     "Developed applications of different sizes.",
     "Managed processes inside a team.",
     "Worked in an agile environment.",
-    "Gained a large amount of Web Developing experience."
     ]
   const {isSmallScreen} = useWindow()
   const pageRef = useRef(null);
@@ -29,17 +27,6 @@ const AboutPage = ({handlePageHeight,handlePageWidth}) => {
     return window.addEventListener('resize', setPageSize);
 
   },[])
-
-  // useEffect(() => {
-  //   const setPageSize = () => {
-  //     console.log('h1')
-  //     handlePageWidth(pageRef.current.offsetWidth);
-  //     handlePageHeight(pageRef.current.offsetHeight);
-  //   }
-  //   console.log('h111',pageRef)
-  //   window.addEventListener('resize', setPageSize)
-  //   return window.removeEventListener('resize', setPageSize);
-  // },[pageRef.current, pageRef.current])
 
   console.log(pageRef)
   return (

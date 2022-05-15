@@ -4,7 +4,7 @@
     width:100%;
     flex-shrink:0;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows:1fr;
     background-image: url('../assets/aboutBlue.svg');
         background-repeat: no-repeat;
         background-position: left;
@@ -16,7 +16,7 @@
     width: 100%;
     flex-shrink: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows:1fr;
     background-image: url(../assets/coursesYellow.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -28,7 +28,7 @@
     width: 100%;
     flex-shrink: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows:1fr;
     background-image: url(../assets/ITCYellow.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -40,7 +40,7 @@
     width: 100%;
     flex-shrink: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows:1fr;
     background-image: url(../assets/jamaPink.svg);
     background-repeat: no-repeat;
     background-position: left;
@@ -130,10 +130,17 @@
     text-align: right;
     padding-right: 1rem;
     padding-top:2rem;
+    white-space: pre-line;
 }
 .course-info-paragraph {
     font-size: 2vw;
-    text-align:left;
+    text-align:right;
+    padding-right: 1rem;
+}
+
+.jama-info-paragraph {
+    font-size: 2vw;
+    text-align: left;
     padding-right: 1rem;
 }
 
@@ -249,13 +256,36 @@ font-size: 2vw;
     padding: 1rem;
 }
 
+#cvpage > a {
+    text-decoration: none;
+    color:#000;
+}
 
+.cv-container {
+transition: .4s ease;
+}
+
+.cv-container:hover {
+    transform: scale(1.1)
+}
+
+#aboutpage,
+#coursespage,
+#itcpage,
+#jamapage {
+align-items: center;
+}
+
+/* @media screen and (max-width: 1000px) {
+
+} */
 
 @media screen and (max-width: 800px) {
 .skill-name {
         font-size: 2vw;
 }
 }
+
 @media screen and (max-width: 800px) {
     /* .header {
           font-size: 6vw;
@@ -264,9 +294,9 @@ font-size: 2vw;
         .paragraph {
           font-size: 5vw;
         } */
-                .row-name {
-                    font-size: 4vw;
-                }
+        .row-name {
+            font-size: 4vw;
+        }
         .project-name {
             font-size: 5vw;
         }
@@ -283,7 +313,24 @@ font-size: 2vw;
         }
         .portfolio-project {
         width: 100%;
-    }
+        }
+
+        .spread-text-grid {
+            grid-column: 1/1;
+        }
+
+        .text-container {
+            padding-left: 0;
+        }
+
+        #aboutpage, #coursespage, #itcpage, #jamapage, #portfoliopage {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .room-image-container>img {
+            padding:2rem;
+        }
 }
 
 @media screen and (max-width: 500px) { 

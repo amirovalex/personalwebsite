@@ -5,7 +5,7 @@
   font-family: 'Poly', serif;
 }
 
-.carousel {
+.carouselDiv {
   display:flex;
   flex-wrap:nowrap;
   height:100%;
@@ -14,9 +14,20 @@
   overflow-y:hidden;
   overflow-x:scroll;
   position: relative;
+  scroll-snap-type: x mandatory;
+}
+#aboutpage,
+#coursespage,
+#itcpage,
+#jamapage,
+#portfoliopage,
+#skillspage,
+#cvpage {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
-.carousel::-webkit-scrollbar {
+.carouselDiv::-webkit-scrollbar {
   width: 0px;
   background: transparent;
   /* make scrollbar transparent */
@@ -65,12 +76,18 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .carouselDiv {
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+  }
   .header {
     font-size:5vw;
   }
   .paragraph {
     font-size:4vw;
   }
+  
 }
 @media screen and (max-width: 600px) {
         /* .header {

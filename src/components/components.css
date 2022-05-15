@@ -84,6 +84,17 @@
     height:10vh;
 }
 
+.portfolio-image {
+    cursor: pointer;
+    transition: .3s ease;
+    position: relative;
+}
+
+.portfolio-image:hover {
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+
 @media screen and (max-width: 800px) {
 
     /* .header {
@@ -93,7 +104,9 @@
         .paragraph {
           font-size: 5vw;
         } */
-
+    #lowerNav {
+        display: none;
+    }
     .skill > img {
         /* max-height: 150px; */
         height: 8vh;
