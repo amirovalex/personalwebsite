@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.aeb175a9.css",
-    "main.js": "/personalwebsite/static/js/main.a59c0455.js",
-    "static/js/787.f3f8d16b.chunk.js": "/personalwebsite/static/js/787.f3f8d16b.chunk.js",
+    "main.css": "/personalwebsite/static/css/main.77fced86.css",
+    "main.js": "/personalwebsite/static/js/main.9888d319.js",
     "static/media/petAPet.png": "/personalwebsite/static/media/petAPet.5669570f1697ce023aa5.png",
     "static/media/reactStore.png": "/personalwebsite/static/media/reactStore.a73ac5f084b594cf5ffc.png",
     "static/media/smartBrain.png": "/personalwebsite/static/media/smartBrain.390f49ad43ed1820a754.png",
+    "static/media/cv.pdf": "/personalwebsite/static/media/cv.5dfed8e5825efa1e1836.pdf",
     "static/media/itc.svg": "/personalwebsite/static/media/itc.d241a3e3d27d3e9a636aa0eaad2f5b85.svg",
     "static/media/jama.svg": "/personalwebsite/static/media/jama.3e50bf07292f069ab89504bf404b54f5.svg",
     "static/media/about.svg": "/personalwebsite/static/media/about.6bc8d927f9f7507c4284bb81eeaca94b.svg",
@@ -33,12 +33,11 @@
     "static/media/cvColorRight.svg": "/personalwebsite/static/media/cvColorRight.217830056eea7bc27923.svg",
     "static/media/jamaPink.svg": "/personalwebsite/static/media/jamaPink.dcf1c5362bcb0aab676c.svg",
     "static/media/aboutBlue.svg": "/personalwebsite/static/media/aboutBlue.0a7adb625adec26b0dd0.svg",
-    "main.aeb175a9.css.map": "/personalwebsite/static/css/main.aeb175a9.css.map",
-    "main.a59c0455.js.map": "/personalwebsite/static/js/main.a59c0455.js.map",
-    "787.f3f8d16b.chunk.js.map": "/personalwebsite/static/js/787.f3f8d16b.chunk.js.map"
+    "main.77fced86.css.map": "/personalwebsite/static/css/main.77fced86.css.map",
+    "main.9888d319.js.map": "/personalwebsite/static/js/main.9888d319.js.map"
   },
   "entrypoints": [
-    "static/css/main.aeb175a9.css",
-    "static/js/main.a59c0455.js"
+    "static/css/main.77fced86.css",
+    "static/js/main.9888d319.js"
   ]
 }
